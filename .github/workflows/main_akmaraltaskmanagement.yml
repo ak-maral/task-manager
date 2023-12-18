@@ -53,5 +53,6 @@ jobs:
           app-name: 'akmaraltaskmanagement'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D3F701EF2B9F4C7798885B3D952F5F9B }}
-          package: './artifacts'  # Specify the path to your published artifacts
+          package: '$(Pipeline.Workspace)/artifacts'  # Specify the correct path to your published artifacts
           # Add other deployment parameters as needed
+
