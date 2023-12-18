@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: ASP-app
-          path: './artifacts'
+          path: '$(GITHUB_WORKSPACE)/artifacts'
 
 
   deploy:
@@ -53,6 +53,7 @@ jobs:
           app-name: 'akmaraltaskmanagement'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D3F701EF2B9F4C7798885B3D952F5F9B }}
-          package: '$(Pipeline.Workspace)/artifacts'  # Specify the correct path to your published artifacts
+          package: '$(GITHUB_WORKSPACE)/artifacts'  # Use GITHUB_WORKSPACE instead of Pipeline.Workspace
           # Add other deployment parameters as needed
+
 
