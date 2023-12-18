@@ -23,7 +23,7 @@ jobs:
         run: nuget restore ktt/ktt.sln  # Adjust YourSolutionFile.sln to your actual solution file
 
       - name: Publish to folder
-        run: msbuild ktt/ktt.sln /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\" /p:Configuration=Release
+        run: msbuild ktt/ktt.sln /nologo /verbosity:m /t:Build /p:_PackageTempDir="\published\" /p:Configuration=Release
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
