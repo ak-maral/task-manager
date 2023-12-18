@@ -1,0 +1,8 @@
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\ktt3.csproj.AssemblyReference.cache
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\Ktt3Export.g.cs
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\App.g.cs
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\ktt3_Content.g.cs
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\ktt3_MarkupCompile.cache
+C:\Users\user\Documents\mobile-app\software\task-manager\ktt\ktt3\obj\Debug\ktt3_MarkupCompile.lref
