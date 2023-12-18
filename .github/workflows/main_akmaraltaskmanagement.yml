@@ -7,53 +7,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Setup MSBuild path
         uses: microsoft/setup-msbuild@v1.0.2
-
-      - name: Setup NuGet
-        uses: NuGet/setup-nuget@v1.0.5
 
       - name: Restore NuGet packages
         run: nuget restore ktt/ktt.sln
 
       - name: Build and Publish
-        run: msbuild ktt/ktt.sln /nologo /verbosity:m /t:Build /t:Publish /p:Configuration=Release /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:PublishUrl=${{ github.workspace }}\artifacts
+        run: msbuild ktt/ktt.sln /nologo /verbosity:m /t:Build /t:Publish /p:Configuration=Release /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:PublishUrl=${{ github.workspace }}/artifacts
 
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
-        with:
-          name: ASP-app
-          path: '$(GITHUB_WORKSPACE)/artifacts'
-
-
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-    
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v3
-        with:
-          name: ASP-app
-      
       - name: Deploy to Azure Web App
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'akmaraltaskmanagement'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D3F701EF2B9F4C7798885B3D952F5F9B }}
-          package: '$(GITHUB_WORKSPACE)/artifacts'  # Use GITHUB_WORKSPACE instead of Pipeline.Workspace
-          # Add other deployment parameters as needed
+          package: '${{ github.workspace }}/artifacts'
 
 
