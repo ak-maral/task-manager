@@ -1,0 +1,18 @@
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\bin\Debug\Task manager.exe
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\bin\Debug\Task manager.pdb
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task manager.csproj.AssemblyReference.cache
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task_manager.Form1.resources
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task_manager.Properties.Resources.resources
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task manager.csproj.GenerateResource.cache
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task manager.csproj.CoreCompileInputs.cache
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task manager.exe
+C:\Users\AcerE15\Desktop\papka_shapka\prj\Task manager\obj\Debug\Task manager.pdb
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\bin\Debug\Task manager.exe
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\bin\Debug\Task manager.pdb
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task manager.csproj.AssemblyReference.cache
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task_manager.Form1.resources
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task_manager.Properties.Resources.resources
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task manager.csproj.GenerateResource.cache
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task manager.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task manager.exe
+C:\Users\user\Documents\mobile-app\C-labs_project\Task manager\obj\Debug\Task manager.pdb
