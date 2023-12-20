@@ -4,7 +4,7 @@
 
 This is a simple Task Manager application developed in C# that allows users to manage their tasks efficiently. The application provides a user-friendly interface for creating, updating, and deleting tasks, as well as marking tasks as completed.
 
-![Task Manager Screenshot](.screenshot.png)
+![image](https://github.com/ak-maral/task-manager/assets/124154876/446fed4e-7ae4-4932-b622-6f80c124fd4d)
 
 ## Features
 
